@@ -6,7 +6,7 @@
 var binarySearch = function(arr, target) {
 	var l = 0, r = arr.length - 1;
 	while (l <= r) {
-		var m = Math.floor((l + r) / 2);
+		var m = parseInt((l + r) / 2);
 		var mid = arr[m];
 		if (mid === target) {
 			return m;
