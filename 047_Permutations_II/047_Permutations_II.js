@@ -2,7 +2,7 @@
  * @param {number[]} nums
  * @return {number[][]}
  */
-const permute = function(nums) {
+var permuteUnique = function(nums) {
 	nums.sort((a, b) => a > b);
 	const result = [nums.slice()];
 	const len = nums.length;
